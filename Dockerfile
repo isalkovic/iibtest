@@ -13,7 +13,7 @@ COPY iib_manage.sh /usr/local/bin/
 #RUN ["/bin/bash", "-c", "/opt/ibm/iib-10.0.0.11/server/bin/mqsideletebroker IIBV10NODE"]
 
 #on build of new iib docker image, create new node, start it and deploy any bars
-RUN /home/iibuser/iib_start_deploy.sh
+RUN chmod +x /home/iibuser/iib_start_deploy.sh
 
 CMD ["/bin/sh", "-c"]
 
