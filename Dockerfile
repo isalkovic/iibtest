@@ -14,8 +14,9 @@ COPY iib_manage.sh /usr/local/bin/
 
 #on build of new iib docker image, create new node, start it and deploy any bars
 USER root
-
 RUN chmod +x /home/iibuser/iib_start_deploy.sh
+
+USER iibuser
 RUN /home/iibuser/iib_start_deploy.sh
 
 CMD ["/bin/sh", "-c"]
