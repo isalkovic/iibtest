@@ -22,4 +22,4 @@ CMD ["/bin/sh", "-c"]
 
 
 #on start of docker container, execute script to start integration node
-ENTRYPOINT /usr/local/bin/iib_manage.sh
+#ENTRYPOINT /usr/local/bin/iib_manage.sh
